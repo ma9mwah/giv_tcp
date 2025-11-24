@@ -131,7 +131,7 @@ class Converter:
         """Represent BMU capacity in kWh from Ah."""
         model=f"{model:0{4}x}"
         if model[0] in ['8']:                       #AIO
-            return round((nom_cap*317)/1000,2)
+            return round((nom_cap*307)/1000,2)
         elif model[0] in ['4','6']:                 #3PH
             return round((nom_cap*76.8)/1000,2)
         else:                                       #LV
